@@ -23,4 +23,9 @@ public class PingPongTest {
     PingPong pingPong = new PingPong();
     assertEquals(new ArrayList<>(Arrays.asList("1", "2", "ping", "4", "pong", "ping")), pingPong.pingPong(6));
   }
+
+  @Test public void pingPong_forNumbersDivisibleByFifteen_returnPingPong() {
+    PingPong pingPong = new PingPong();
+    assertEquals(new ArrayList<>(Arrays.asList("1", "2", "ping", "4", "pong", "ping", "7", "8", "ping", "pong", "11", "ping", "13", "14", "ping pong", "16")), pingPong.pingPong(16));
+  }
 }

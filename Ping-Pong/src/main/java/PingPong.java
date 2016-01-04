@@ -8,10 +8,12 @@ public class PingPong {
       ArrayList<String> results = new ArrayList<String>();
 
       for ( Integer i = 1 ; i <= number ; i++ ) {
-        if ( i % 3 == 0 ) {
-          results.add("ping");
+        if ( i % 15 == 0 ) {
+          results.add("ping pong");
         } else if ( i % 5 == 0 ) {
           results.add("pong");
+        } else if ( i % 3 == 0 ) {
+          results.add("ping");
         } else {
           results.add(Integer.toString(i));
         }
