@@ -17,4 +17,10 @@ public class PingPongTest {
     PingPong pingPong = new PingPong();
     assertEquals(new ArrayList<>(Arrays.asList("1", "2","ping", "4")), pingPong.pingPong(4));
   }
+
+  @Test
+  public void pingPong_forNumbersDivisibleByFive_returnPong() {
+    PingPong pingPong = new PingPong();
+    assertEquals(new ArrayList<>(Arrays.asList("1", "2", "ping", "4", "pong", "ping")), pingPong.pingPong(6));
+  }
 }

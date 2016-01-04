@@ -10,6 +10,8 @@ public class PingPong {
       for ( Integer i = 1 ; i <= number ; i++ ) {
         if ( i % 3 == 0 ) {
           results.add("ping");
+        } else if ( i % 5 == 0 ) {
+          results.add("pong");
         } else {
           results.add(Integer.toString(i));
         }
